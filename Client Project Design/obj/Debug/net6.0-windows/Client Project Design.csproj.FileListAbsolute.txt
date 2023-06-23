@@ -1,0 +1,26 @@
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Client Project Design.exe
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Client Project Design.deps.json
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Client Project Design.runtimeconfig.json
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Client Project Design.dll
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Client Project Design.pdb
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.csproj.AssemblyReference.cache
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewClientView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\App.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design_MarkupCompile.cache
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewClientView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.g.resources
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.GeneratedMSBuildEditorConfig.editorconfig
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.AssemblyInfoInputs.cache
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.AssemblyInfo.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.csproj.CoreCompileInputs.cache
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.dll
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\refint\Client Project Design.dll
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.pdb
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.genruntimeconfig.cache
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ref\Client Project Design.dll
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Bold.ttf
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Light.ttf
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Regular.ttf
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design_Content.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design_MarkupCompile.lref
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\App.baml

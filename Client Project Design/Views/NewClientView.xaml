@@ -1,0 +1,23 @@
+﻿<Window x:Class="Client_Project_Design.Views.NewClientView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_Project_Design.Views"
+        mc:Ignorable="d"
+        Title="NewClientView" Height="740" Width="440" Background="#F4F8FB" WindowStyle="None">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" FontSize="60" Text="clients" Foreground="#01133D" FontFamily="Static Files/#SulphurPoint-Bold" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        
+        
+        
+    </Grid>
+</Window>

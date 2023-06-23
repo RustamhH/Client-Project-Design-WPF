@@ -1,0 +1,9 @@
+﻿<Application x:Class="Client_Project_Design.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Client_Project_Design"
+             StartupUri="Views/NewClientView.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="SulphurPoint-Bold">Static Files/SulphurPoint-Bold.ttf#SulphurPoint</FontFamily>
+    </Application.Resources>
+</Application>
