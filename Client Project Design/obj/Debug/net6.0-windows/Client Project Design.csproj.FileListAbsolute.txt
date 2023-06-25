@@ -18,9 +18,14 @@ D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-wi
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.pdb
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.genruntimeconfig.cache
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ref\Client Project Design.dll
-D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Bold.ttf
-D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Light.ttf
-D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Static Files\SulphurPoint-Regular.ttf
-D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design_Content.g.cs
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design_MarkupCompile.lref
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\App.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ResourceDictionaries\CustomFontStyleRD.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ResourceDictionaries\CustomButtonStyleRD.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ResourceDictionaries\CustomTextBoxStyleRD.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\HomeView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\HomeView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewClientRegisterView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewClientRegisterView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewOrderView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewOrderView.baml

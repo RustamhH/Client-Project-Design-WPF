@@ -7,12 +7,39 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewClientRegisterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\NewClientView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NewOrderView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ResourceDictionaries\CustomButtonStyleRD.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceDictionaries\CustomFontStyleRD.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceDictionaries\CustomTextBoxStyleRD.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewClientRegisterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\NewClientView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NewOrderView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="Client_Project_Design.Views.NewClientRegisterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client_Project_Design.Views"
+        mc:Ignorable="d"
+        Title="NewClientRegisterView" Height="750" Width="420" Background="#F4F8FB" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.05*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0" VerticalAlignment="Top" Margin="10">
+            <Image Source="/Static Files/Images/Client Logo.png" Width="60"/>
+            <TextBlock Text="home" FontWeight="Bold" FontSize="18" Margin="280 0 0 0" Foreground="#01133D">
+                <TextBlock.InputBindings>
+                    <MouseBinding Gesture="LeftClick" Command="{Binding BackToHomeCommand}" />
+                </TextBlock.InputBindings>
+            </TextBlock>
+        </WrapPanel>
+
+        <Button Grid.Row="2" Margin="5" Content="register" FontSize="15"></Button>
+        <TextBlock Grid.Row="3" Foreground="Gray" Text="Proudly created by Rustam Hasanli in 2023" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+
+
+        <StackPanel Grid.Row="1" Margin="7">
+            <TextBlock Text="Name" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox  Width="400" TextAlignment="Left" Text=" What is the name of the client?" Height="50"></TextBox>
+            
+            <TextBlock Text="Surname" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox  Width="400" TextAlignment="Left" Text=" What is the surname of the client?" Height="50"></TextBox>
+            
+            <TextBlock Text="Number" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox  Width="400" TextAlignment="Left" Text=" What is the phone number of the client?" Height="50"></TextBox>
+
+            <TextBlock Text="Company" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox  Width="400" TextAlignment="Left" Text=" Which company does the person belong to?" Height="50"></TextBox>
+
+            <TextBlock Text="Place" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox  Width="400" TextAlignment="Left" Text=" Where did he/she found me?" Height="50"></TextBox>
+
+            <TextBlock Text="Registration date" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBox Width="115" TextAlignment="Left" Text=" Day" Height="50" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" TextAlignment="Left" Text=" Month" Height="50" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" TextAlignment="Left" Text=" Year" Height="50" Margin="0 0 20 0"></TextBox>
+            </StackPanel>
+
+            <TextBlock Text="How do I know him/her" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox Width="400" TextAlignment="Left" Text=" Write how do you know him/her" Height="50"></TextBox>
+
+
+        </StackPanel>
+        
+        
+
+    </Grid>
+</Window>

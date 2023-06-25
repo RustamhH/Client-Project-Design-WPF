@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("static%20files/sulphurpoint-bold.ttf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("static%20files/sulphurpoint-light.ttf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("static%20files/sulphurpoint-regular.ttf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("static%20files/fonts/sulphurpoint-regular.ttf")]
 
 

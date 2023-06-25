@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_Project_Design.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,7 @@ namespace Client_Project_Design.Views
         public NewClientView()
         {
             InitializeComponent();
+            DataContext = new NewClientViewModel();
         }
     }
 }

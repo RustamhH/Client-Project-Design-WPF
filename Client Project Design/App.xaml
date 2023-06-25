@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:Client_Project_Design"
              StartupUri="Views/NewClientView.xaml">
     <Application.Resources>
-        <FontFamily x:Key="SulphurPoint-Bold">Static Files/SulphurPoint-Bold.ttf#SulphurPoint</FontFamily>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionaries/CustomFontStyleRD.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/CustomButtonStyleRD.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/CustomTextBoxStyleRD.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
