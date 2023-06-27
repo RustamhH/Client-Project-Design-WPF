@@ -1,4 +1,5 @@
 ﻿using Client_Project_Design.Commands;
+using Client_Project_Design.Models;
 using Client_Project_Design.Views;
 using System;
 using System.Collections.Generic;
@@ -12,26 +13,24 @@ namespace Client_Project_Design.ViewModels
     {
 
         public RealCommand? NewClientCommand { get; set; }
+        public RealCommand? AllClientsCommand { get; set; }
 
 
 
         public void NewClient(object? param)
         {
-            try
-            {
-                object temp = App.Current.MainWindow; // home view
-                NewClientRegisterView ncrv = new();
-                App.Current.MainWindow.Hide();
-                App.Current.MainWindow = ncrv; // new client register
-                ncrv.ShowDialog();
-                App.Current.MainWindow = temp as HomeView;
-                App.Current.MainWindow.ShowDialog();
-            }
-            catch(Exception ex) { }
+            WindowMaker.MakeWindow<HomeView, NewClientRegisterView>();
         }
+
+        public void AllClients(object? param)
+        {
+            WindowMaker.MakeWindow<HomeView, AllClientsView>();
+        }
+
         public HomeViewModel()
         {
             NewClientCommand = new(NewClient);
+            AllClientsCommand = new(AllClients);
         }
     }
 }

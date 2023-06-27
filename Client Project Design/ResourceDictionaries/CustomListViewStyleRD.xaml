@@ -1,0 +1,74 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    
+
+    <Style TargetType="ListView" x:Key="ClientsList">
+
+        
+
+
+
+        <Setter Property="ItemsSource" Value="{Binding Clients}"></Setter>
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" ></Setter>
+        
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Border Background="White" Margin="0 10 0 0" BorderThickness="1" CornerRadius="3" Height="95" Width="373">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel>
+
+                                <StackPanel Orientation="Horizontal" Margin="10 5 0 0">
+                                    <TextBlock Foreground="#01133D" FontWeight="Bold" FontSize="17" Text="{Binding Name}" Margin="0 0 5 0"></TextBlock>
+                                    <TextBlock Foreground="#01133D" FontWeight="Bold" FontSize="17" Text="{Binding Surname}" ></TextBlock>
+                                </StackPanel>
+
+
+                                <TextBlock Margin="10 1 0 0" FontWeight="Light" FontSize="14" Text="{Binding Company}"></TextBlock>
+                                <TextBlock Margin="10 1 0 0" FontWeight="Light" FontSize="14" Text="{Binding Number}"></TextBlock>
+                                <TextBlock Margin="10 1 0 0" FontWeight="Light" FontSize="14" Text="{Binding HowDoIKnow}"></TextBlock>
+
+
+                            </StackPanel>
+
+
+                            <Grid Grid.Column="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition></RowDefinition>
+                                    <RowDefinition></RowDefinition>
+                                </Grid.RowDefinitions>
+
+                                <Button Grid.Row="1" Content="more" Width="120" Height="30" Margin="20 0 0 0" ></Button>
+                                
+                                
+                                
+                                <Border Background="#3476E4" CornerRadius="13" Width="17" Height="17" HorizontalAlignment="Right" Margin="10" VerticalAlignment="Top">
+                                    <Image Source="/Static Files/Images/2.png" Width="7" ></Image>
+                                </Border>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+    
+    
+
+
+
+
+
+</ResourceDictionary>

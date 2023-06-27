@@ -10,12 +10,16 @@
 
   <ItemGroup>
     <None Remove="Static Files\Client Logo.png" />
+    <None Remove="Static Files\Images\+ new.png" />
+    <None Remove="Static Files\Images\2.png" />
+    <None Remove="Static Files\Images\instagram.png" />
     <None Remove="Static Files\SulphurPoint-Bold.ttf" />
     <None Remove="Static Files\SulphurPoint-Light.ttf" />
     <None Remove="Static Files\SulphurPoint-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Static Files\Images\+ new.png" />
     <Resource Include="Static Files\Images\Client Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -31,7 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Resource Include="Static Files\Images\2.png" />
+    <Resource Include="Static Files\Images\instagram.png" />
   </ItemGroup>
 
 </Project>

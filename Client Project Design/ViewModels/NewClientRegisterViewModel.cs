@@ -1,4 +1,5 @@
 ﻿using Client_Project_Design.Commands;
+using Client_Project_Design.Models;
 using Client_Project_Design.Views;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,18 @@ namespace Client_Project_Design.ViewModels
     public class NewClientRegisterViewModel
     {
         public RealCommand BackToHomeCommand { get; set; }
+        public RealCommand RegisterCommand { get; set; }
 
         public NewClientRegisterViewModel()
         {
             BackToHomeCommand = new(BackToHome);
+            RegisterCommand = new(Register);
+        }
+
+
+        public void Register(object?param)
+        {
+            WindowMaker.MakeWindow<NewClientRegisterView, AllClientsView>();
         }
 
         public void BackToHome(object?param)

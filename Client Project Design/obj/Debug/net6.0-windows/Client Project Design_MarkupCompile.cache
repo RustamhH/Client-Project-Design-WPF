@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\WinForm & WPF\Client Project Design\Client Project Design\App.xaml
-7219755097
+10-1312794392
 
-11-574356673
+18718101156
 194618410957
-ResourceDictionaries\CustomButtonStyleRD.xaml;ResourceDictionaries\CustomFontStyleRD.xaml;ResourceDictionaries\CustomTextBoxStyleRD.xaml;Views\HomeView.xaml;Views\NewClientRegisterView.xaml;Views\NewClientView.xaml;Views\NewOrderView.xaml;
+ResourceDictionaries\CustomButtonStyleRD.xaml;ResourceDictionaries\CustomFontStyleRD.xaml;ResourceDictionaries\CustomListViewStyleRD.xaml;ResourceDictionaries\CustomTextBoxStyleRD.xaml;Views\AllClientsView.xaml;Views\ClientProfileView.xaml;Views\HomeView.xaml;Views\NewClientRegisterView.xaml;Views\NewClientView.xaml;Views\NewOrderView.xaml;
 
 False
 

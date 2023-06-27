@@ -29,3 +29,9 @@ D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-wi
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewClientRegisterView.baml
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewOrderView.g.cs
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\NewOrderView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\AllClientsView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\AllClientsView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ResourceDictionaries\CustomListViewStyleRD.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\ClientProfileView.g.cs
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Views\ClientProfileView.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

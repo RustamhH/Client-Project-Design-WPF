@@ -9,6 +9,7 @@
                 <ResourceDictionary Source="ResourceDictionaries/CustomFontStyleRD.xaml"/>
                 <ResourceDictionary Source="ResourceDictionaries/CustomButtonStyleRD.xaml"/>
                 <ResourceDictionary Source="ResourceDictionaries/CustomTextBoxStyleRD.xaml"/>
+                <ResourceDictionary Source="ResourceDictionaries/CustomListViewStyleRD.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
