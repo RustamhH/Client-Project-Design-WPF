@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
@@ -15,14 +16,19 @@ namespace Client_Project_Design.ViewModels
 {
     public class NewClientViewModel
     {
-
+        public string Username { get; set; }
+        public string Password { get; set; }
         public RealCommand? LoginCommand { get; set; }
 
 
 
         public void LogIn(object? param)
         {
-            WindowMaker.MakeWindow<NewClientView, HomeView>();
+            if(Password=="rustem123" && Username=="rustem")
+            {
+                WindowMaker.MakeWindow<NewClientView, HomeView>();
+            }
+            else MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
 

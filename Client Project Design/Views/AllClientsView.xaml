@@ -18,14 +18,18 @@
             <RowDefinition Height="0.05*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <WrapPanel Grid.Row="0" VerticalAlignment="Top" Margin="10">
-            <Image Source="/Static Files/Images/Client Logo.png" Width="60"/>
-            <TextBlock Text="home" FontWeight="Bold" FontSize="18" Margin="280 0 0 0" Foreground="#01133D">
-                <TextBlock.InputBindings>
-                    <MouseBinding Gesture="LeftClick" Command="{Binding BackToHomeCommand}" />
-                </TextBlock.InputBindings>
-            </TextBlock>
-        </WrapPanel>
+
+        <Grid Background="White">
+            <WrapPanel Grid.Row="0" VerticalAlignment="Top" Margin="10">
+                <Image Source="/Static Files/Images/Client Logo.png" Width="60"/>
+                <TextBlock Text="home" FontWeight="Bold" FontSize="18" Margin="280 0 0 0" Foreground="#01133D">
+                    <TextBlock.InputBindings>
+                        <MouseBinding Gesture="LeftClick" Command="{Binding BackToHomeCommand}" />
+                    </TextBlock.InputBindings>
+                </TextBlock>
+            </WrapPanel>
+        </Grid>
+        
 
         <Button Grid.Row="2" Margin="15" Width="65" Height="61" VerticalAlignment="Top" HorizontalAlignment="Right" Command="{Binding NewCommand}">
             <Image Source="/Static Files/Images/+ new.png" Width="30"/>
@@ -33,6 +37,8 @@
         <TextBlock Grid.Row="3" Foreground="Gray" Text="Proudly created by Rustam Hasanli in 2023" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
 
         <ListView Style="{DynamicResource ClientsList}" Grid.Row="1" ></ListView>
+
+        
 
 
 

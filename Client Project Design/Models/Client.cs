@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_Project_Design.DB;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -8,22 +9,25 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media;
 
 namespace Client_Project_Design.Models
 {
-    public class Client:INotifyPropertyChanged
+    public class Client
     {
 
 
         public ObservableCollection<Order> Orders { get; set; } = new();
 
 
+       
+
         private Guid _id;
 
 		public Guid Id
 		{
 			get { return _id; }
-			set { _id = value; OnChangeProperty(); }
+			set { _id = value;  }
 		}
 
 		private string? _company;
@@ -31,7 +35,8 @@ namespace Client_Project_Design.Models
 		public string? Company
 		{
 			get { return _company; }
-			set { _company = value; OnChangeProperty(); }
+			set { if (string.IsNullOrEmpty(value)) throw new Exception("Invalid Company"); 
+                _company = value;  }
 		}
 
 
@@ -40,7 +45,8 @@ namespace Client_Project_Design.Models
         public string? Name
         {
             get { return _name; }
-            set { _name = value; OnChangeProperty(); }
+            set { if (string.IsNullOrEmpty(value)) throw new Exception("Invalid Name"); 
+                _name = value;  }
         }
 
 
@@ -49,7 +55,8 @@ namespace Client_Project_Design.Models
         public string? Surname
         {
             get { return _surname; }
-            set { _surname = value; OnChangeProperty(); }
+            set { if (string.IsNullOrEmpty(value)) throw new Exception("Invalid Surname"); 
+                _surname = value;  }
         }
 
 
@@ -59,7 +66,8 @@ namespace Client_Project_Design.Models
         public string? Place
         {
             get { return _place; }
-            set { _place = value; OnChangeProperty(); }
+            set {if (string.IsNullOrEmpty(value)) throw new Exception("Invalid Place");
+                _place = value;  }
         }
 
 
@@ -70,8 +78,9 @@ namespace Client_Project_Design.Models
             get { return _number; }
             set 
             {
-                if (!Regex.IsMatch(value!, "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{2}[-\\s\\.]?[0-9]{2}$")) MessageBox.Show("Invalid Number"); 
-                else _number = value; OnChangeProperty(); 
+                if (string.IsNullOrEmpty(value)) throw new Exception("Invalid Number");
+                if (!Regex.IsMatch(value!, "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{2}[-\\s\\.]?[0-9]{2}$")) throw new Exception("Invalid Number");
+                _number = value; 
             }
         }
 
@@ -81,7 +90,8 @@ namespace Client_Project_Design.Models
         public string? HowDoIKnow
         {
             get { return _howdoIknow; }
-            set { _howdoIknow = value; OnChangeProperty(); }
+            set { if (string.IsNullOrEmpty(value)) throw new Exception("Invalid HowDoIKnow"); 
+                _howdoIknow = value; }
         }
 
 
@@ -92,36 +102,37 @@ namespace Client_Project_Design.Models
         public DateTime RegistrationDate
         {
             get { return _reg; }
-            set { _reg = value; OnChangeProperty(); }
+            set { _reg = value; }
         }
 
 
 
-        public event PropertyChangedEventHandler? PropertyChanged;
 
 
-        private void OnChangeProperty([CallerMemberName] string? name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
+        
+
+
+        public string Regs { get; set; }
+
 
 
         public Client()
         {
-
+           
         }
 
 
-        public Client(Guid id, string? company, string? name,string?surname, string? place, string? number,string?how, DateTime registrationDate)
+        public Client(Guid id,  string? name, string? surname, string? number, string? place, string? company , string day,string month,string year,string ?how):this()
         {
             Id = id;
-            Company = company;
             Name = name;
             Surname = surname;
-            Place = place;
-            HowDoIKnow = how;
             Number = number;
-            RegistrationDate = registrationDate;
+            Company = company;
+            Place = place;
+            RegistrationDate = new(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day));
+            Regs = RegistrationDate.ToShortDateString();
+            HowDoIKnow = how;
         }
     }
 }

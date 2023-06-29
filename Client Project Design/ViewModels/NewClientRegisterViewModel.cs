@@ -1,4 +1,6 @@
-﻿using Client_Project_Design.Commands;
+﻿using Bogus.DataSets;
+using Client_Project_Design.Commands;
+using Client_Project_Design.DB;
 using Client_Project_Design.Models;
 using Client_Project_Design.Views;
 using System;
@@ -15,8 +17,33 @@ namespace Client_Project_Design.ViewModels
         public RealCommand BackToHomeCommand { get; set; }
         public RealCommand RegisterCommand { get; set; }
 
+
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Number { get; set; }
+        public string Company { get; set; }
+        public string Place { get; set; }
+        public string Day { get; set; }
+        public string Month { get; set; }
+        public string Year { get; set; }
+        public string How { get; set; }
+
+        public static bool forEdit { get; set; }
+
         public NewClientRegisterViewModel()
         {
+            if(forEdit)
+            {
+                Name = ClientProfileViewModel.SelectedClient.Name;
+                Surname = ClientProfileViewModel.SelectedClient.Surname;
+                Number = ClientProfileViewModel.SelectedClient.Number;
+                Company = ClientProfileViewModel.SelectedClient.Company;
+                Place = ClientProfileViewModel.SelectedClient.Place;
+                Day = ClientProfileViewModel.SelectedClient.RegistrationDate.Day.ToString();
+                Month = ClientProfileViewModel.SelectedClient.RegistrationDate.Month.ToString();
+                Year = ClientProfileViewModel.SelectedClient.RegistrationDate.Year.ToString();
+                How = ClientProfileViewModel.SelectedClient.HowDoIKnow;
+            }
             BackToHomeCommand = new(BackToHome);
             RegisterCommand = new(Register);
         }
@@ -24,6 +51,30 @@ namespace Client_Project_Design.ViewModels
 
         public void Register(object?param)
         {
+            if(!forEdit)
+            {
+                try
+                {
+                    Client client = new(Guid.NewGuid(), Name, Surname, Number, Place, Company,Day,Month,Year,How);
+                    ClientsDB.Clients.Add(client);
+                }
+                catch(Exception ex) { MessageBox.Show(ex.Message); return; }
+
+            }
+            else
+            {
+                try
+                {
+                    ClientProfileViewModel.SelectedClient.Name = Name;
+                    ClientProfileViewModel.SelectedClient.Surname = Surname;
+                    ClientProfileViewModel.SelectedClient.Number = Number;
+                    ClientProfileViewModel.SelectedClient.Company = Company;
+                    ClientProfileViewModel.SelectedClient.Place = Place;
+                    ClientProfileViewModel.SelectedClient.RegistrationDate= new(Convert.ToInt32(Year), Convert.ToInt32(Month),Convert.ToInt32(Day));
+                    ClientProfileViewModel.SelectedClient.HowDoIKnow = How;
+                }
+                catch(Exception ex) { MessageBox.Show(ex.Message);return; }
+            }
             WindowMaker.MakeWindow<NewClientRegisterView, AllClientsView>();
         }
 

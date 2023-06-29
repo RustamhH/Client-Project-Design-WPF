@@ -1,4 +1,5 @@
 ﻿using Client_Project_Design.Commands;
+using Client_Project_Design.DB;
 using Client_Project_Design.Models;
 using Client_Project_Design.Views;
 using System;
@@ -19,12 +20,12 @@ namespace Client_Project_Design.ViewModels
         public RealCommand NewCommand { get; set; }
         public RealCommand MoreCommand { get; set; }
 
+
+
         public AllClientsViewModel()
         {
-            Clients.Add(new(Guid.NewGuid(),"Indigo","Yunis","Memmedov","Baku","051-394-08-59","Essek Ticaret",DateTime.Now));
-            Clients.Add(new(Guid.NewGuid(),"Mastaga","Ehsen","Abdullazade","Baku","051-394-08-59", "Developer", DateTime.Now));
-            Clients.Add(new(Guid.NewGuid(),"Azadliq","Ibrahim","Asadov","Baku","051-394-08-59", "Frontend", DateTime.Now));
-            Clients.Add(new(Guid.NewGuid(),"Nizami","Meri","Meri","Baku","051-394-08-59", "Afgan Kole", DateTime.Now));
+            Clients = ClientsDB.Clients!;
+            
             BackToHomeCommand = new(BackToHome);
             NewCommand = new(New);
             MoreCommand = new(More);
@@ -32,11 +33,7 @@ namespace Client_Project_Design.ViewModels
 
 
 
-        public void More(object?param)
-        {
-            WindowMaker.MakeWindow<AllClientsView, ClientProfileView>();
-        }
-
+       
         public void BackToHome(object? param)
         {
             try
@@ -58,9 +55,17 @@ namespace Client_Project_Design.ViewModels
             WindowMaker.MakeWindow<AllClientsView, NewClientRegisterView>();
         }
 
+        public void More(object? param)
+        {
+            if(param is Client cl)
+            {
+                ClientProfileViewModel.SelectedClient = cl;
+            }
+            
+            WindowMaker.MakeWindow<AllClientsView, ClientProfileView>();
+        }
 
 
-        
 
     }
 }

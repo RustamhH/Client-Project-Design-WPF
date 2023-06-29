@@ -33,6 +33,9 @@
     <Page Update="ResourceDictionaries\CustomFontStyleRD.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ResourceDictionaries\CustomListView2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ResourceDictionaries\CustomListViewStyleRD.xaml">
       <SubType>Designer</SubType>
     </Page>

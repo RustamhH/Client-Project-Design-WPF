@@ -12,14 +12,27 @@
     <None Remove="Static Files\Client Logo.png" />
     <None Remove="Static Files\Images\+ new.png" />
     <None Remove="Static Files\Images\2.png" />
+    <None Remove="Static Files\Images\building.png" />
     <None Remove="Static Files\Images\instagram.png" />
+    <None Remove="Static Files\Images\pen.png" />
+    <None Remove="Static Files\Images\phone.png" />
     <None Remove="Static Files\SulphurPoint-Bold.ttf" />
     <None Remove="Static Files\SulphurPoint-Light.ttf" />
     <None Remove="Static Files\SulphurPoint-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Static Files\Images\pen.png" />
+    <Resource Include="Static Files\Images\phone.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Static Files\Images\+ new.png" />
+    <Resource Include="Static Files\Images\building.png" />
     <Resource Include="Static Files\Images\Client Logo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

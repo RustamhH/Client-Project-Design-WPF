@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client_Project_Design.Views"
         mc:Ignorable="d"
-        Title="NewClientView" Height="750" Width="420" Background="#F4F8FB" WindowStartupLocation="CenterScreen">
+        Title="NewClientView" Height="750" Width="420" Background="#F4F8FB" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="Window_Closed">
     
     <Grid>
         <Grid.RowDefinitions>
@@ -23,10 +23,10 @@
 
         <StackPanel Grid.Row="1" Margin="20">
             <TextBlock Foreground="#01133D" Text="username" HorizontalAlignment="Center" FontWeight="Bold" FontSize="25" Margin="0 50 0 0"></TextBlock>
-            <TextBox HorizontalContentAlignment="Center" Text="enter username" Height="70" Margin="0 10 0 0" Width="360"></TextBox>
+            <TextBox HorizontalAlignment="Center" Tag="enter your username" Text="{Binding Username}" Height="70" Margin="0 10 0 0" Width="360"></TextBox>
 
-            <TextBlock Foreground="#01133D" Text="password" HorizontalAlignment="Center" FontWeight="Bold" FontSize="25" Margin="0 30 0 0"></TextBlock>
-            <TextBox HorizontalContentAlignment="Center"  Text="enter password" Height="70" Margin="0 10 0 0" Width="360"></TextBox>
+            <TextBlock Foreground="#01133D" Text="password" HorizontalAlignment="Center"  FontWeight="Bold" FontSize="25" Margin="0 30 0 0"></TextBlock>
+            <TextBox HorizontalAlignment="Center" Tag="enter your password" Text="{Binding Password}" Height="70" Margin="0 10 0 0" Width="360"></TextBox>
 
         </StackPanel>
 

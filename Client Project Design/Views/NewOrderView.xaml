@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client_Project_Design.Views"
         mc:Ignorable="d"
-        Title="NewOrderView" Height="750" Width="420" Background="#F4f8fb">
+        Title="NewOrderView" Height="750" Width="420" Background="#F4f8fb" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"></RowDefinition>
@@ -26,28 +26,28 @@
         </Grid>
         
 
-        <Button Grid.Row="2" Margin="10" Content="Register" FontSize="15" Height="70"></Button>
+        <Button Grid.Row="2" Margin="10" Content="Register" FontSize="15" Height="70" Command="{Binding RegisterCommand}"></Button>
         <TextBlock Grid.Row="3" Foreground="Gray" Text="Proudly created by Rustam Hasanli in 2023" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"></TextBlock>
 
         <StackPanel Grid.Row="1" Margin="7">
-            <TextBlock Text="Name of the border" FontSize="20" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox Width="400" Text=" Type the order name same with the order blank" Height="60"></TextBox>
-
+            <TextBlock Text="Name of the order" FontSize="20" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
+            <TextBox Width="400" Text="{Binding OrderName}" Tag="Type the order name same with the order blank" Height="60"></TextBox>
+ 
             <TextBlock Text="Order quantity" FontSize="20" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox Width="400" TextAlignment="Left" Text=" Type the order name same with the order blank" Height="60"></TextBox>
+            <TextBox Width="400" Text="{Binding OrderQuantity}" Tag="Type the order name same with the order blank" Height="60"></TextBox>
             
             <TextBlock Text="Order opening day" FontWeight="Bold" Foreground="#01133D" Margin="5" FontSize="20"></TextBlock>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-                <TextBox Width="115" TextAlignment="Left" Text=" Day" Height="60" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Month" Height="60" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Year" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding DayO}" Tag=" Day" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding MonthO}" Tag=" Month" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding YearO}" Tag=" Year" Height="60" Margin="0 0 20 0"></TextBox>
             </StackPanel>
 
             <TextBlock Text="Order delivery day" FontWeight="Bold" Foreground="#01133D" Margin="5" FontSize="20"></TextBlock>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-                <TextBox Width="115" TextAlignment="Left" Text=" Day" Height="60" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Month" Height="60" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Year" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding DayD}" Tag=" Day" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding MonthD}" Tag=" Month" Height="60" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding YearD}" Tag=" Year" Height="60" Margin="0 0 20 0"></TextBox>
             </StackPanel>
 
            

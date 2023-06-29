@@ -27,8 +27,6 @@ namespace Client_Project_Design.Views
             DataContext = new AllClientsViewModel();
         }
 
-
         
-
     }
 }

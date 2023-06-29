@@ -29,29 +29,29 @@
 
         <StackPanel Grid.Row="1" Margin="7">
             <TextBlock Text="Name" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox  Width="400" TextAlignment="Left" Text=" What is the name of the client?" Height="50"></TextBox>
+            <TextBox  Width="400" Text="{Binding Name}" Tag=" What is the name of the client?" Height="50"></TextBox>
             
             <TextBlock Text="Surname" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox  Width="400" TextAlignment="Left" Text=" What is the surname of the client?" Height="50"></TextBox>
+            <TextBox  Width="400" Text="{Binding Surname}"  Tag=" What is the surname of the client?" Height="50"></TextBox>
             
             <TextBlock Text="Number" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox  Width="400" TextAlignment="Left" Text=" What is the phone number of the client?" Height="50"></TextBox>
+            <TextBox  Width="400" Text="{Binding Number}"  Tag=" What is the phone number of the client?" Height="50"></TextBox>
 
             <TextBlock Text="Company" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox  Width="400" TextAlignment="Left" Text=" Which company does the person belong to?" Height="50"></TextBox>
+            <TextBox  Width="400" Text="{Binding Company}"  Tag=" Which company does the person belong to?" Height="50"></TextBox>
 
             <TextBlock Text="Place" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox  Width="400" TextAlignment="Left" Text=" Where did he/she found me?" Height="50"></TextBox>
+            <TextBox  Width="400" Text="{Binding Place}"  Tag=" Where did he/she found me?" Height="50"></TextBox>
 
             <TextBlock Text="Registration date" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
             <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
-                <TextBox Width="115" TextAlignment="Left" Text=" Day" Height="50" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Month" Height="50" Margin="0 0 20 0"></TextBox>
-                <TextBox Width="115" TextAlignment="Left" Text=" Year" Height="50" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding Day}"  Tag=" Day" Height="50" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding Month}"  Tag=" Month" Height="50" Margin="0 0 20 0"></TextBox>
+                <TextBox Width="115" Text="{Binding Year}"  Tag=" Year" Height="50" Margin="0 0 20 0"></TextBox>
             </StackPanel>
 
             <TextBlock Text="How do I know him/her" FontWeight="Bold" Foreground="#01133D" Margin="5"></TextBlock>
-            <TextBox Width="400" TextAlignment="Left" Text=" Write how do you know him/her" Height="50"></TextBox>
+            <TextBox Width="400" Text="{Binding How}"   Tag=" Write how do you know him/her" Height="50"></TextBox>
 
 
         </StackPanel>
