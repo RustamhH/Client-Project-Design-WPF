@@ -37,3 +37,4 @@ D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-wi
 D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\Bogus.dll
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\Client Project Design.csproj.CopyComplete
 D:\WinForm & WPF\Client Project Design\Client Project Design\obj\Debug\net6.0-windows\ResourceDictionaries\CustomListView2.baml
+D:\WinForm & WPF\Client Project Design\Client Project Design\bin\Debug\net6.0-windows\FontAwesome.WPF.dll
