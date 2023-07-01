@@ -1,4 +1,5 @@
-﻿using Client_Project_Design.Models;
+﻿using Client_Project_Design.DB;
+using Client_Project_Design.Models;
 using Client_Project_Design.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -28,5 +29,11 @@ namespace Client_Project_Design.Views
         }
 
         
+
+        private void ClientsListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Client deleted = ClientsListView.SelectedItem as Client;
+            ClientsDB.Clients.Remove(deleted);
+        }
     }
 }

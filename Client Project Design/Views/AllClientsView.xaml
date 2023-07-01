@@ -36,7 +36,7 @@
         </Button>
         <TextBlock Grid.Row="3" Foreground="Gray" Text="Proudly created by Rustam Hasanli in 2023" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
 
-        <ListView Style="{DynamicResource ClientsList}" Grid.Row="1" ></ListView>
+        <ListView Name="ClientsListView" MouseDoubleClick="ClientsListView_MouseDoubleClick"  Style="{DynamicResource ClientsList}" Grid.Row="1" ></ListView>
 
         
 
