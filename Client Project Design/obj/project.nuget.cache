@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kTqNHqVgQeBKjx5dqd66S9p+nICIDpOYUXlexGZj/7ksMatzP/scOtLoN4sjOtXBTkqgaZ5w5mFe8CvMCKEFZA==",
+  "dgSpecHash": "9weCKmXXJYhAyBc8v3J1NUCegsTkp8SJZYS5rd8MQr7g+jiAHY9VMPKVy74bO6H5nUTkAmHQHInrVyoUth2e0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
+  "projectFilePath": "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hesen_zc39\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Hesen_zc39\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512"

@@ -77,7 +77,7 @@ namespace Client_Project_Design.ViewModels
             {
                 try
                 {
-                    Order order = new(Guid.NewGuid(), OrderName, Convert.ToUInt32(OrderQuantity), "21", "4", "2021", "20", "2", "2023");
+                    Order order = new(Guid.NewGuid(), OrderName, Convert.ToUInt32(OrderQuantity), "21", "4", "2021", "20", "2", "2023",true);
                     ClientProfileViewModel.SelectedClient.Orders.Add(order);
                 }
                 catch (Exception ex) { MessageBox.Show(ex.Message); return; }

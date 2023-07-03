@@ -108,8 +108,23 @@ namespace Client_Project_Design.Models
 
 
 
+        private int _activeorders;
 
+        public string ActiveOrders
+        {
+            get
+            {
+                foreach (var item in Orders)
+                {
+                    if (item.IsDelivered) _activeorders++;
+                }
+                return _activeorders.ToString();
+            }            
+        }
+            
         
+
+
 
 
         public string Regs { get; set; }
@@ -133,6 +148,7 @@ namespace Client_Project_Design.Models
             RegistrationDate = new(Convert.ToInt32(year), Convert.ToInt32(month), Convert.ToInt32(day));
             Regs = RegistrationDate.ToShortDateString();
             HowDoIKnow = how;
+            
         }
     }
 }

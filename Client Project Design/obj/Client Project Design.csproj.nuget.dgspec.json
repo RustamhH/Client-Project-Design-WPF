@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {}
+    "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {
+    "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
+        "projectUniqueName": "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
         "projectName": "Client Project Design",
-        "projectPath": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
+        "projectPath": "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
         "packagesPath": "C:\\Users\\Hesen_zc39\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\obj\\",
+        "outputPath": "C:\\Users\\Hesen_zc39\\source\\repos\\Client-Project-Design-WPF\\Client Project Design\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
