@@ -33,7 +33,14 @@ namespace Client_Project_Design.Views
         private void ClientsListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Client deleted = ClientsListView.SelectedItem as Client;
-            ClientsDB.Clients.Remove(deleted);
+            
+            if(MessageBox.Show("Are you sure?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning)==MessageBoxResult.Yes)
+            {
+                ClientsDB.Clients.Remove(deleted);
+                JsonFileHandler.Write("Clients.json", ClientsDB.Clients);
+
+            }
+
         }
     }
 }

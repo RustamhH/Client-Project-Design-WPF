@@ -46,11 +46,6 @@ namespace Client_Project_Design.Views
             }
         }
 
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            JsonFileHandler.Write("Clients.json",ClientsDB.Clients);
-        }
-
         
 
     }

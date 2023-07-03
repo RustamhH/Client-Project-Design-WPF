@@ -57,8 +57,9 @@ namespace Client_Project_Design.ViewModels
                 {
                     Client client = new(Guid.NewGuid(), Name, Surname, Number, Place, Company,Day,Month,Year,How);
                     ClientsDB.Clients.Add(client);
+                    JsonFileHandler.Write("Clients.json", ClientsDB.Clients);
                 }
-                catch(Exception ex) { MessageBox.Show(ex.Message); return; }
+                catch (Exception ex) { MessageBox.Show(ex.Message); return; }
 
             }
             else
