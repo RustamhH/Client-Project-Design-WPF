@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WinForm & WPF\\Client Project Design\\Client Project Design\\Client Project Design.csproj": {}
+    "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {}
   },
   "projects": {
-    "D:\\WinForm & WPF\\Client Project Design\\Client Project Design\\Client Project Design.csproj": {
+    "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WinForm & WPF\\Client Project Design\\Client Project Design\\Client Project Design.csproj",
+        "projectUniqueName": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
         "projectName": "Client Project Design",
-        "projectPath": "D:\\WinForm & WPF\\Client Project Design\\Client Project Design\\Client Project Design.csproj",
-        "packagesPath": "C:\\Users\\RustamH\\.nuget\\packages\\",
-        "outputPath": "D:\\WinForm & WPF\\Client Project Design\\Client Project Design\\obj\\",
+        "projectPath": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\Client Project Design.csproj",
+        "packagesPath": "C:\\Users\\Hesen_zc39\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hesen_zc39\\Source\\Repos\\Client-Project-Design-WPF\\Client Project Design\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\RustamH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hesen_zc39\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

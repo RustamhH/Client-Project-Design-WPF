@@ -52,6 +52,7 @@ namespace Client_Project_Design.ViewModels
 
         public void New(object?param)
         {
+            NewClientRegisterViewModel.forEdit = false;
             WindowMaker.MakeWindow<AllClientsView, NewClientRegisterView>();
         }
 
